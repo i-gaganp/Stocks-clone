@@ -1,6 +1,6 @@
 # Stocks-clone
 
-A Stock Website Dashboad Clone
+A Stock Website Dashboard Clone
 
 View Live at : https://i-gaganp.github.io/Stocks-clone/
 
