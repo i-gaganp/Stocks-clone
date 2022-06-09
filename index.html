@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stocks</title>
+    
+    <!-- Material Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.1.0/mdb.min.css" rel="stylesheet"/>
+    <!-- Material Bootstrap -->
+
+    <!-- Google Fonts -->
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+
+    <!-- Google Fonts -->
+    
+    <!-- Font Awesome -->
+
+    <script src="https://kit.fontawesome.com/7a91a21a54.js" crossorigin="anonymous"></script>
+
+    <!-- Font Awesome -->
+
+    <style>
+        body{
+            background: linear-gradient(136.05deg, #F5F7FA 1.07%, #F4F6F8 99.3%);
+            margin: 0;
+        }
+
+        .headerBg{
+            height: 240px;
+            background: linear-gradient(201.71deg, #6A79DD -80.88%, #5866C3 203.65%);
+        }
+
+        .egg{
+            
+            font-size: 2rem;
+            margin-bottom: -15px;
+        }
+
+        .headingDash{
+            position: relative;
+            float: right;
+            left: 10px;
+            top: 5px;
+            margin-bottom: 60px;
+            
+            font-family: 'Nanum Gothic Coding', monospace;
+            font-family: 'Open Sans', sans-serif;
+            font-family: 'Rubik', sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 24px;
+        }
+
+        .headingElement{
+            opacity: 50%;
+            font-family: 'Nanum Gothic Coding', monospace;
+            font-family: 'Open Sans', sans-serif;
+            font-family: 'Rubik', sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 24px;
+            /* position: relative;
+            top: -35px;
+            left: 90px; */
+        }
+
+        .notificationBell{
+            position:relative;
+            float: right;
+            font-size: 1.3rem;
+            left: 20%;
+        }
+
+        .firstName{
+            font-family: 'Poppins', sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 15px;
+            position: relative;
+            float: left;
+            left: 20px;
+            top: -14px;
+        }
+
+        .lastName{
+            font-family: 'Poppins', sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            position: relative;
+            left: 77px;
+            top: -46px;
+        }
+
+        .branding{
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+        }
+
+        .navBarButtons{
+            font-family: 'Poppins', sans-serif;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 15px;
+            /* identical to box height, or 83% */
+
+            letter-spacing: 0.25px;
+            color: white;
+        }
+
+        .navBarButtons:hover{
+            background-color: white;
+            opacity: 50%;
+            color: white;
+            border-radius: 20px;
+        }
+
+        a{
+            border-radius: 17px;
+            
+            height: 34px;
+            text-align: center;
+        }
+        a:hover{
+            background: rgba(255, 255, 255, 0.15);
+            
+            border-radius: 17px;
+        }
+
+        .earningsCardTitle{
+            font-family: 'Poppins', sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 15px;
+            /* identical to box height, or 107% */
+
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+
+            color: #79828B;
+        }
+
+        .lastWeekChange{
+            font-family: 'Poppins', sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+        }
+
+        .amount{
+            font-family: 'Poppins', sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 30px;
+            margin-top: 20px;
+            margin-bottom: 0;
+            letter-spacing: 0.75px;
+
+            
+        }
+
+        .etherium{
+            background-color: hsla(232, 59%, 61%, 0.13) ;
+            border-radius: 20px;
+            padding: 4px;
+            text-align: center;
+            width: 110px;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            letter-spacing: 1.25px;
+            text-transform: uppercase;
+
+            color: hsl(232, 55%, 60%);
+        }
+
+        .bitcoin{
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            width: 90px;
+            text-align: center;
+            padding: 4px;
+            border-radius: 20px;
+            letter-spacing: 1.25px;
+            text-transform: uppercase;
+            color: hsl(24, 55%, 60%);
+            background-color: hsla(24, 55%, 60%, 20%);
+        }
+    </style>
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <div class="container-fluid headerBg">
+        <div class="container py-5 px-5">
+            <div class="row">
+                <div class="col-md-8">
+                    <i class="fa-solid fa-egg text-white egg">
+                        <p class="headingDash">Dash<span class="headingElement"> Element</span></p>
+                        
+                        
+                    </i>
+
+                    <i class="fa-solid fa-bell text-white notificationBell"></i>
+                    
+                        <nav class="navbar-expand-sm">
+
+                            <div class="container-fluid">
+                            <!-- Links -->
+                            <ul class="navbar-nav" style="font-family: Poppins;">
+                                <li class="nav-item text-white pe-3">
+                                <a class="nav-link text-white" href="#">Home</a>
+                                </li>
+                                <li class="nav-item px-3">
+                                <a class="nav-link text-white" href="#">My Projects</a>
+                                </li>
+                                <li class="nav-item px-3">
+                                <a class="nav-link text-white" href="#">Payments</a>
+                                </li>
+                                <li class="nav-item px-3">
+                                    <a class="nav-link text-white" href="#">Activity</a>
+                                </li>
+                                <li class="nav-item ps-3">
+                                    <a class="nav-link text-white" href="#">Settings</a>
+                                </li>
+                            </ul>
+                            </div>
+                        
+                        </nav>
+                            <div class="ms-4">
+                                <div class="card my-4" style="width:100%;">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="card-body">
+                                                <h5 class="card-title earningsCardTitle">Earnings</h5>
+                                                <p class="card-text text-muted amount">$<span class="text-dark"> 2878.90</span></p>
+                                                <p class="card-text"><small class="text-muted lastWeekChange"><span class="text-success">+42</span> since last week</small></p>
+                                                <p class="etherium">0.9087 ETH</p>
+                                                <p class="bitcoin">0.5 BTC</p>
+                                            </div>
+                                        </div>
+                                    <div class="col-md-8 p-4">
+                                        <canvas id="myChart"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                </div>  
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script>
+        const labels = [
+          'March',
+          'April',
+          'May',
+          'June',
+          'July',
+          'August',
+          'September',
+          'October',
+          'November',
+          'December'
+        ];
+      
+        const data = {
+          labels: labels,
+          datasets: [{
+            label: 'Earnings',
+            backgroundColor: 'rgb(83, 120, 255, 0.5)',
+            borderColor: 'rgb(83, 120, 255, 0.5)',
+            data: [140, 210, 170, 220, 0, 226, 130, 180, 160, 210, 190, 235],
+          }]
+        };
+      
+        const config = {
+          type: 'line',
+          data: data,
+          options: {}
+        };
+
+        const myChart = new Chart(
+      document.getElementById('myChart'),
+      config
+    );
+      </script>
+
+
+      
+
+    <!-- MDBootstrap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.20.0/js/mdb.min.js" integrity="sha512-XFd1m0eHgU1F05yOmuzEklFHtiacLVbtdBufAyZwFR0zfcq7vc6iJuxerGPyVFOXlPGgM8Uhem9gwzMI8SJ5uw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <!-- Chart.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.8.0/chart.min.js" integrity="sha512-sW/w8s4RWTdFFSduOTGtk4isV1+190E/GghVffMA9XczdJ2MDzSzLEubKAs5h0wzgSJOQTRYyaz73L3d6RtJSg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.8.0/chart.esm.min.js" integrity="sha512-yPOQ2pPoQ9JtP0/jDKpXiKyWNCJWT5OI+6r1EqZmTg+afKQOBpy08VYboeq+Tt9kl9/FOCueEhH6cmHN3nAdJA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.8.0/helpers.esm.min.js" integrity="sha512-vxCPccgWacJoW2HlxhlKKtczdzvcg0r1UuB9LfNGt6vsDbgLfSFxKlolUS2mqKNXrOK5b93S45309T+V5BhueA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>
