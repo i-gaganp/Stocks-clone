@@ -1,0 +1,176 @@
+body{
+    background: linear-gradient(136.05deg, #F5F7FA 1.07%, #F4F6F8 99.3%);
+    margin: 0;
+}
+
+.headerBg{
+    height: 240px;
+    background: linear-gradient(201.71deg, #6A79DD -80.88%, #5866C3 203.65%);
+}
+
+.egg{
+    
+    font-size: 2rem;
+    margin-bottom: -15px;
+}
+
+.headingDash{
+    position: relative;
+    float: right;
+    left: 10px;
+    top: 5px;
+    margin-bottom: 60px;
+    
+    font-family: 'Nanum Gothic Coding', monospace;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.headingElement{
+    opacity: 50%;
+    font-family: 'Nanum Gothic Coding', monospace;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    /* position: relative;
+    top: -35px;
+    left: 90px; */
+}
+
+.notificationBell{
+    position:relative;
+    float: left; 
+    font-size: 1.3rem;
+    left: 100%;
+    
+}
+
+.firstName{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 15px;
+    position: relative;
+    float: left;
+    left: 20px;
+    top: -14px;
+}
+
+.lastName{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    position: relative;
+    left: 77px;
+    top: -46px;
+}
+
+.branding{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.navBarButtons{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 15px;
+    /* identical to box height, or 83% */
+
+    letter-spacing: 0.25px;
+    color: white;
+}
+
+.navBarButtons:hover{
+    background-color: white;
+    opacity: 50%;
+    color: white;
+    border-radius: 20px;
+}
+
+a{
+    border-radius: 17px;
+    
+    height: 34px;
+    text-align: center;
+}
+a:hover{
+    background: rgba(255, 255, 255, 0.15);
+    
+    border-radius: 17px;
+}
+
+.earningsCardTitle{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 15px;
+    /* identical to box height, or 107% */
+
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+
+    color: #79828B;
+}
+
+.lastWeekChange{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.amount{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 0;
+    letter-spacing: 0.75px;
+
+    
+}
+
+.etherium{
+    background-color: hsla(232, 59%, 61%, 0.13) ;
+    border-radius: 20px;
+    padding: 4px;
+    text-align: center;
+    width: 110px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1.25px;
+    text-transform: uppercase;
+
+    color: hsl(232, 55%, 60%);
+}
+
+.bitcoin{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    width: 90px;
+    text-align: center;
+    padding: 4px;
+    border-radius: 20px;
+    letter-spacing: 1.25px;
+    text-transform: uppercase;
+    color: hsl(24, 55%, 60%);
+    background-color: hsla(24, 55%, 60%, 20%);
+}
