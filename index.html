@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stocks</title>
-    
+
     <!-- Material Bootstrap -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.1.0/mdb.min.css" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.1.0/mdb.min.css" rel="stylesheet" />
     <!-- Material Bootstrap -->
 
     <!-- Google Fonts -->
@@ -17,15 +18,16 @@
     <!-- Custom Styles -->
     <link rel="stylesheet" href="style.css">
     <!-- Custom Styles -->
-    
+
     <!-- Font Awesome -->
 
     <script src="https://kit.fontawesome.com/7a91a21a54.js" crossorigin="anonymous"></script>
 
     <!-- Font Awesome -->
 
-    
+
 </head>
+
 <body>
     <!-- Chart.js -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -33,28 +35,50 @@
 
     <!-- Body Starts from here -->
     <div class="container-fluid headerBg">
-        <div class="container py-5 px-5">
+        <div class="container py-5">
             <div class="row">
-                <div class="col-md-8">
+                <div class="col-md-9">
                     <i class="fa-solid fa-egg text-white egg">
                         <p class="headingDash">Dash<span class="headingElement"> Element</span></p>
                     </i>
+                </div>
 
-                    
-                    
+                <div class="col-md-3 justify-content-center">
+                    <div class="row p-0 m-0">
+                        <div class="col-md-1">
+                            <i class="fa-solid fa-bell text-white"></i>
+                        </div>
+                        
+                        <div class="col-md-10">
+                            <p class="text-white userName">Gagan Preet</p>
+                        </div>
+                        
+                        <div class="col-md-1">
+                            <button class="dropdown-toggle dropArrow"></button></span>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+                <div class="row">
+                    <div class="col-md-7">
+
+                        <!--NavBar Starts Here-->
                         <nav class="navbar-expand-sm">
 
                             <div class="container-fluid">
-                            <!-- Links -->
+
                                 <ul class="navbar-nav" style="font-family: Poppins;">
                                     <li class="nav-item text-white pe-3">
-                                    <a class="nav-link text-white" href="#">Home</a>
+                                        <a class="nav-link text-white" href="#">Home</a>
                                     </li>
                                     <li class="nav-item px-3">
-                                    <a class="nav-link text-white" href="#">My Projects</a>
+                                        <a class="nav-link text-white" href="#">My Projects</a>
                                     </li>
                                     <li class="nav-item px-3">
-                                    <a class="nav-link text-white" href="#">Payments</a>
+                                        <a class="nav-link text-white" href="#">Payments</a>
                                     </li>
                                     <li class="nav-item px-3">
                                         <a class="nav-link text-white" href="#">Activity</a>
@@ -64,42 +88,90 @@
                                     </li>
                                 </ul>
                             </div>
-                        
+
                         </nav>
-                            <div class="ms-4">
-                                <div class="card my-4" style="width:100%;">
-                                    <div class="row">
-                                        <div class="col-md-4">
-                                            <div class="card-body">
-                                                <h5 class="card-title earningsCardTitle">Earnings</h5>
-                                                <p class="card-text text-muted amount">$<span class="text-dark"> 2878.90</span></p>
-                                                <p class="card-text"><small class="text-muted lastWeekChange"><span class="text-success">+42</span> since last week</small></p>
-                                                <p class="etherium">0.9087 ETH</p>
-                                                <p class="bitcoin">0.5 BTC</p>
-                                            </div>
+                    </div>
+                </div>
+
+                <!--NavBar Ends Here-->
+
+                <div class="row">
+                    <div class="col-md-7">
+                        <!-- Earning Card Starts Here -->
+                        <div class="ms-4">
+                            <div class="card my-4" style="width:100%;">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="card-body">
+                                            <h5 class="card-title earningsCardTitle">Earnings</h5>
+                                            <p class="card-text text-muted amount">$<span class="text-dark">
+                                                    2878.90</span></p>
+                                            <p class="card-text"><small class="text-muted lastWeekChange"><span
+                                                        class="text-success">+42</span> since last week</small></p>
+                                            <p class="etherium">0.9087 ETH</p>
+                                            <p class="bitcoin">0.5 BTC</p>
                                         </div>
+                                    </div>
                                     <div class="col-md-8 p-4">
                                         <canvas id="myChart"></canvas>
                                     </div>
                                 </div>
                             </div>
-                </div>  
+                        </div>
+                    </div>
+
+                    <!-- Earning Card Ends Here -->
+
+
+
+
+                    <div class="col-md-5">
+                        <div class="card my-4" style="width:100%;">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="card-body">
+                                        <p class="card-title earningsCardTitle pb-2">Rank</p>
+                                        <p class="card-text"><i class="fa-solid fa-star" style="font-size: 1.8rem; color: 
+                                            #6271D2"></i>607</p>
+                                        <p class="card-text">
+                                            <small class="text-muted lastWeekChange">
+                                                You're in top <span class="text-success">40%</span>
+                                            </small>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+
+
+
+
+
         </div>
+    </div>
     </div>
 
     <!-- Body Ends Here -->
 
 
-        
+
 
     <!-- Custom Script for chart -->
     <script src="script.js"></script>
 
     <!-- MDBootstrap -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.20.0/js/mdb.min.js" integrity="sha512-XFd1m0eHgU1F05yOmuzEklFHtiacLVbtdBufAyZwFR0zfcq7vc6iJuxerGPyVFOXlPGgM8Uhem9gwzMI8SJ5uw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    
-    
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.20.0/js/mdb.min.js"
+        integrity="sha512-XFd1m0eHgU1F05yOmuzEklFHtiacLVbtdBufAyZwFR0zfcq7vc6iJuxerGPyVFOXlPGgM8Uhem9gwzMI8SJ5uw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+
 </body>
+
 </html>

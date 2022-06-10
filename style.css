@@ -52,26 +52,29 @@ body{
     
 }
 
-.firstName{
-    font-family: 'Poppins', sans-serif;
+.userName{
+    font-family: 'Poppins';
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
     line-height: 15px;
-    position: relative;
-    float: left;
-    left: 20px;
-    top: -14px;
+    
+    
+    letter-spacing: 0.25px;
+
+    color: #FFFFFF;
+
+    mix-blend-mode: normal;
+    opacity: 0.9;
 }
 
-.lastName{
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    position: relative;
-    left: 77px;
-    top: -46px;
+.dropArrow{
+    border-radius: 50%;
+    color: white;
+    background-color: #5866C3;
+    border: none;
+    width: 18px;
+    height: 18px;
 }
 
 .branding{
@@ -174,3 +177,4 @@ a:hover{
     color: hsl(24, 55%, 60%);
     background-color: hsla(24, 55%, 60%, 20%);
 }
+
