@@ -226,3 +226,44 @@ a:hover {
     color: #42505C;
 }
 
+.joinConvoBox{
+    background: linear-gradient(201.71deg, #8F9DF8 -80.88%, #92A0FF 203.65%);
+    border-radius: 10px;
+    height: 100%;
+}
+
+.hashIcon{
+    font-size: 4rem;
+    transform: rotate(-20deg);
+    
+}
+
+.convoTitle{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 25px;
+    
+}
+
+.convoText{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.75;
+}
+
+.convoButton{
+    font-family: 'Poppins';
+    letter-spacing: 1.75px;
+    
+}
+
+.buttonPadding{
+    padding-top: 25px;
+}
