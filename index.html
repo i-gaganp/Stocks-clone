@@ -36,23 +36,23 @@
     <!-- Body Starts from here -->
     <div class="container-fluid headerBg">
         <div class="container py-5">
-            <div class="row">
-                <div class="col-md-9">
+            <div class="row mx-3">
+                <div class="col-md-10">
                     <i class="fa-solid fa-egg text-white egg">
                         <p class="headingDash">Dash<span class="headingElement"> Element</span></p>
                     </i>
                 </div>
 
-                <div class="col-md-3 justify-content-center">
-                    <div class="row p-0 m-0">
-                        <div class="col-md-1">
+                <div class="col-md-2 ">
+                    <div class="row gx-0">
+                        <div class="col-md-3 ">
                             <i class="fa-solid fa-bell text-white"></i>
                         </div>
-                        
-                        <div class="col-md-10">
+
+                        <div class="col-md-8">
                             <p class="text-white userName">Gagan Preet</p>
                         </div>
-                        
+
                         <div class="col-md-1">
                             <button class="dropdown-toggle dropArrow"></button></span>
                         </div>
@@ -60,88 +60,254 @@
 
 
                 </div>
+            </div>
 
 
-                <div class="row">
-                    <div class="col-md-7">
+            <div class="row">
+                <div class="col-md-7">
 
-                        <!--NavBar Starts Here-->
-                        <nav class="navbar-expand-sm">
+                    <!--NavBar Starts Here-->
+                    <nav class="navbar-expand-sm">
 
-                            <div class="container-fluid">
+                        <div class="container-fluid">
 
-                                <ul class="navbar-nav" style="font-family: Poppins;">
-                                    <li class="nav-item text-white pe-3">
-                                        <a class="nav-link text-white" href="#">Home</a>
-                                    </li>
-                                    <li class="nav-item px-3">
-                                        <a class="nav-link text-white" href="#">My Projects</a>
-                                    </li>
-                                    <li class="nav-item px-3">
-                                        <a class="nav-link text-white" href="#">Payments</a>
-                                    </li>
-                                    <li class="nav-item px-3">
-                                        <a class="nav-link text-white" href="#">Activity</a>
-                                    </li>
-                                    <li class="nav-item ps-3">
-                                        <a class="nav-link text-white" href="#">Settings</a>
-                                    </li>
-                                </ul>
-                            </div>
+                            <ul class="navbar-nav" style="font-family: Poppins;">
+                                <li class="nav-item text-white pe-3">
+                                    <a class="nav-link text-white" href="#">Home</a>
+                                </li>
+                                <li class="nav-item px-3">
+                                    <a class="nav-link text-white" href="#">My Projects</a>
+                                </li>
+                                <li class="nav-item px-3">
+                                    <a class="nav-link text-white" href="#">Payments</a>
+                                </li>
+                                <li class="nav-item px-3">
+                                    <a class="nav-link text-white" href="#">Activity</a>
+                                </li>
+                                <li class="nav-item ps-3">
+                                    <a class="nav-link text-white" href="#">Settings</a>
+                                </li>
+                            </ul>
+                        </div>
 
-                        </nav>
-                    </div>
+                    </nav>
                 </div>
+            </div>
 
-                <!--NavBar Ends Here-->
+            <!--NavBar Ends Here-->
 
-                <div class="row">
-                    <div class="col-md-7">
-                        <!-- Earning Card Starts Here -->
-                        <div class="ms-4">
-                            <div class="card my-4" style="width:100%;">
-                                <div class="row">
-                                    <div class="col-md-4">
-                                        <div class="card-body">
-                                            <h5 class="card-title earningsCardTitle">Earnings</h5>
-                                            <p class="card-text text-muted amount">$<span class="text-dark">
-                                                    2878.90</span></p>
-                                            <p class="card-text"><small class="text-muted lastWeekChange"><span
-                                                        class="text-success">+42</span> since last week</small></p>
-                                            <p class="etherium">0.9087 ETH</p>
-                                            <p class="bitcoin">0.5 BTC</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-8 p-4">
-                                        <canvas id="myChart"></canvas>
-                                    </div>
+            <div class="row mx-3">
+                <div class="col-md-8">
+                    <!-- Earning Card Starts Here -->
+
+                    <div class="card my-4" style="width:100%;">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card-body align-center">
+                                    <h5 class="card-title earningsCardTitle">Earnings</h5>
+                                    <p class="card-text text-muted amount">$<span class="text-dark">
+                                            2878.90</span></p>
+                                    <p class="card-text"><small class="text-muted lastWeekChange"><span
+                                                class="text-success">+42</span> since last week</small></p>
+                                    <p class="etherium">0.9087 ETH</p>
+                                    <p class="bitcoin">0.5 BTC</p>
                                 </div>
+                            </div>
+                            <div class="col-md-8 p-4">
+                                <canvas id="myChart"></canvas>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Earning Card Ends Here -->
+                </div>
+
+                <!-- Earning Card Ends Here -->
 
 
 
 
-                    <div class="col-md-5">
-                        <div class="card my-4" style="width:100%;">
+                <div class="col-md-4">
+                    <div class="card my-4" style="width:100%;">
+                        <div class="card-body">
                             <div class="row">
                                 <div class="col-md-6">
-                                    <div class="card-body">
-                                        <p class="card-title earningsCardTitle pb-2">Rank</p>
-                                        <p class="card-text"><i class="fa-solid fa-star" style="font-size: 1.8rem; color: 
-                                            #6271D2"></i>607</p>
-                                        <p class="card-text">
-                                            <small class="text-muted lastWeekChange">
-                                                You're in top <span class="text-success">40%</span>
-                                            </small>
-                                        </p>
-                                    </div>
+
+                                    <p class="card-title earningsCardTitle pb-0">Rank</p>
+                                    <p class="card-text mb-0"><i class="fa-solid fa-star" style="font-size: 1.8rem; color: 
+                                            #6271D2"></i><span style="font-size: 2rem;"> 607</span></p>
+                                    <p class="card-text">
+                                        <small class="text-muted lastWeekChange">
+                                            You're in top <span class="text-success">40%</span>
+                                        </small>
+                                    </p>
+
                                 </div>
                                 <div class="col-md-6">
+                                    <p class="card-title earningsCardTitle pb-0">Projects</p>
+                                    <p class="card-text mb-0"><i class="fa-solid fa-code codeIcon"></i><span
+                                            style="font-size: 2rem;"> 45</span></p>
+                                    <p class="card-text">
+                                        <small class="text-muted lastWeekChange">
+                                            <span class="text-success">10
+                                            </span> in this month
+                                        </small>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="my-4" style="border: 1px solid #E6EBF0;"></div>
+                            <div class="row">
+                                <div class="col-md-12 mt-3">
+                                    <h1 class="card-title earningsCardTitle">top categories</h1>
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-md-3">
+                                    <p class="categories" style="width: 60px;">ruby</p>
+                                </div>
 
+                                <div class="col-md-3">
+                                    <p class="categories">clojure</p>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <p class="categories" style="width:60px">java</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-3 px-5">
+                <div class="col-md-6">
+                    <h2 class="secRowTitle">Suggested Projects</h2>
+                </div>
+
+                <div class="col-md-6">
+                    <p class="secRowProjects">
+                        <a class="text-dark" href="#">view all projects
+                            <span><i class="fa-solid fa-arrow-right"></i></a>
+                        </span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="row mx-3 my-3">
+                <div class="col-md-4">
+                    <div class="card" style="width: 100%;">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <img src="images/profile2.png">
+                                </div>
+
+                                <div class="col-md-6">
+                                    <p class="card-title profileTitle pb-0 mb-0">Alice Martin</p>
+                                    <small class="text-muted align-top activityStatus">5 hours ago</small>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <p class="categories ms-5 my-2" style="width:50%">html</p>
+                                </div>
+                            </div>
+
+                            <p class="card-text mt-3 profileText">Design and develop a website for an educational
+                                platform focusing
+                                on the growth of children.</p>
+
+                            <div class="mb-4" style="border: 1px solid #E6EBF0;"></div>
+
+                            <div class="row g-5">
+                                <div class="col-md-3">
+                                    <p class="etherium mb-0" style="width: 85px;">1.2 ETH</p>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <p class="bitcoin">0.3 BTC</p>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <p class="profileAmount">$760</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card" style="width: 100%;">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <img src="images/profile1.png">
+                                </div>
+
+                                <div class="col-md-6">
+                                    <p class="card-title profileTitle pb-0 mb-0">Alberto Donko</p>
+                                    <small class="text-muted align-top activityStatus">Yesterday, 9:40pm</small>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <p class="categories ms-5 my-2" style="width:50%">ruby</p>
+                                </div>
+                            </div>
+
+                            <p class="card-text mt-3 profileText">Lorem Ipsum has been the industry's standard dummy
+                                text ever since the 1500s. This is some more text in a card.</p>
+
+                            <div class="mb-4" style="border: 1px solid #E6EBF0;"></div>
+
+                            <div class="row g-5">
+                                <div class="col-md-3">
+                                    <p class="etherium mb-0" style="width: 85px;">3 ETH</p>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <p class="bitcoin">1 BTC</p>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <p class="profileAmount">$3360</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card" style="width: 100%;">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <img src="images/profile4.png">
+                                </div>
+
+                                <div class="col-md-6">
+                                    <p class="card-title profileTitle pb-0 mb-0">Alexander Goe</p>
+                                    <small class="text-muted align-top activityStatus">Yesterday, 2:00pm</small>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <p class="categories ms-5 my-2" style="width:50%">ruby</p>
+                                </div>
+                            </div>
+
+                            <p class="card-text mt-3 profileText">Scrambled it to make a type specimen book. It has
+                                survived not only five centuries. This is some more text in a card.</p>
+
+                            <div class="mb-4" style="border: 1px solid #E6EBF0;"></div>
+
+                            <div class="row g-5">
+                                <div class="col-md-3">
+                                    <p class="etherium mb-0" style="width: 85px;">1 ETH</p>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <p class="bitcoin">0.2 BTC</p>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <p class="profileAmount">$620</p>
                                 </div>
                             </div>
                         </div>
@@ -150,10 +316,13 @@
             </div>
 
 
-
-
-
         </div>
+
+
+
+
+
+    </div>
     </div>
     </div>
 

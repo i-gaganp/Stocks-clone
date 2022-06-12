@@ -1,26 +1,25 @@
-body{
+body {
     background: linear-gradient(136.05deg, #F5F7FA 1.07%, #F4F6F8 99.3%);
     margin: 0;
 }
 
-.headerBg{
+.headerBg {
     height: 240px;
     background: linear-gradient(201.71deg, #6A79DD -80.88%, #5866C3 203.65%);
 }
 
-.egg{
-    
+.egg {
+
     font-size: 2rem;
     margin-bottom: -15px;
 }
 
-.headingDash{
+.headingDash {
     position: relative;
     float: right;
     left: 10px;
     top: 5px;
     margin-bottom: 60px;
-    
     font-family: 'Nanum Gothic Coding', monospace;
     font-family: 'Open Sans', sans-serif;
     font-family: 'Rubik', sans-serif;
@@ -30,7 +29,7 @@ body{
     line-height: 24px;
 }
 
-.headingElement{
+.headingElement {
     opacity: 50%;
     font-family: 'Nanum Gothic Coding', monospace;
     font-family: 'Open Sans', sans-serif;
@@ -39,103 +38,77 @@ body{
     font-weight: 500;
     font-size: 20px;
     line-height: 24px;
-    /* position: relative;
-    top: -35px;
-    left: 90px; */
 }
 
-.notificationBell{
-    position:relative;
-    float: left; 
-    font-size: 1.3rem;
-    left: 100%;
-    
-}
 
-.userName{
+.userName {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
     line-height: 15px;
-    
-    
     letter-spacing: 0.25px;
-
     color: #FFFFFF;
-
     mix-blend-mode: normal;
     opacity: 0.9;
 }
 
-.dropArrow{
-    border-radius: 50%;
+.dropArrow {
     color: white;
-    background-color: #5866C3;
     border: none;
-    width: 18px;
-    height: 18px;
+    background-color: transparent;
 }
 
-.branding{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-}
 
-.navBarButtons{
+.navBarButtons {
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 18px;
     line-height: 15px;
-    /* identical to box height, or 83% */
-
     letter-spacing: 0.25px;
     color: white;
 }
 
-.navBarButtons:hover{
+.navBarButtons:hover {
     background-color: white;
     opacity: 50%;
     color: white;
     border-radius: 20px;
 }
 
-a{
+a {
     border-radius: 17px;
-    
+
     height: 34px;
     text-align: center;
 }
-a:hover{
+
+a:hover {
     background: rgba(255, 255, 255, 0.15);
-    
+
     border-radius: 17px;
 }
 
-.earningsCardTitle{
+.earningsCardTitle {
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 15px;
-    /* identical to box height, or 107% */
-
     letter-spacing: 1.5px;
     text-transform: uppercase;
-
     color: #79828B;
 }
 
-.lastWeekChange{
+.lastWeekChange {
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
 }
 
-.amount{
+.amount {
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -143,12 +116,20 @@ a:hover{
     margin-top: 20px;
     margin-bottom: 0;
     letter-spacing: 0.75px;
-
-    
 }
 
-.etherium{
-    background-color: hsla(232, 59%, 61%, 0.13) ;
+.profileAmount {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: right;
+    color: #79828B;
+}
+
+.etherium {
+    background-color: hsla(232, 59%, 61%, 0.13);
     border-radius: 20px;
     padding: 4px;
     text-align: center;
@@ -159,11 +140,10 @@ a:hover{
     font-size: 16px;
     letter-spacing: 1.25px;
     text-transform: uppercase;
-
     color: hsl(232, 55%, 60%);
 }
 
-.bitcoin{
+.bitcoin {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 500;
@@ -178,3 +158,74 @@ a:hover{
     background-color: hsla(24, 55%, 60%, 20%);
 }
 
+.codeIcon {
+    font-size: 1.7rem;
+    color: #6271D2;
+}
+
+.categories {
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 5px 0 5px 0;
+    text-align: center;
+    background: hsla(209, 11%, 60%, 10%);
+    border-radius: 16px;
+    color: #79828B;
+}
+
+.secRowTitle {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.25px;
+    color: #42505C;
+}
+
+.secRowProjects {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 15px;
+    text-align: right;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #79828B;
+
+}
+
+.profileTitle {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #42505C;
+    justify-self: center;
+}
+
+.activityStatus {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #79828B;
+}
+
+.profileText {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #42505C;
+}
+
+#myChart{
+    
+}
