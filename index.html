@@ -6,7 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stocks</title>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- Material Bootstrap -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.1.0/mdb.min.css" rel="stylesheet" />
     <!-- Material Bootstrap -->
@@ -70,29 +72,39 @@
                     <nav class="navbar-expand-sm">
 
                         <div class="container-fluid">
-
-                            <ul class="navbar-nav" style="font-family: Poppins;">
-                                <li class="nav-item text-white pe-3">
-                                    <a class="nav-link text-white" href="#">Home</a>
-                                </li>
-                                <li class="nav-item px-3">
-                                    <a class="nav-link text-white" href="#">My Projects</a>
-                                </li>
-                                <li class="nav-item px-3">
-                                    <a class="nav-link text-white" href="#">Payments</a>
-                                </li>
-                                <li class="nav-item px-3">
-                                    <a class="nav-link text-white" href="#">Activity</a>
-                                </li>
-                                <li class="nav-item ps-3">
-                                    <a class="nav-link text-white" href="#">Settings</a>
-                                </li>
-                            </ul>
+                            <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+                                data-mdb-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                                aria-label="Toggle navigation">
+                                <i class="fas fa-bars"></i>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarNav">
+                                <ul class="navbar-nav" style="font-family: Poppins;">
+                                    <li class="nav-item text-white pe-2">
+                                        <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+                                    </li>
+                                    <li class="nav-item px-2">
+                                        <a class="nav-link text-white" href="#">My Projects</a>
+                                    </li>
+                                    <li class="nav-item px-2">
+                                        <a class="nav-link text-white" href="#">Payments</a>
+                                    </li>
+                                    <li class="nav-item px-2">
+                                        <a class="nav-link text-white" href="#">Activity</a>
+                                    </li>
+                                    <li class="nav-item ps-2">
+                                        <a class="nav-link text-white" href="#">Settings</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
 
                     </nav>
+
+
+
                 </div>
             </div>
+
 
             <!--NavBar Ends Here-->
 
@@ -129,7 +141,7 @@
                             <div class="row">
                                 <div class="col-md-6">
 
-                                    <p class="card-title earningsCardTitle pb-0">Rank</p>
+                                    <p class="earningsCardTitle pb-0">Rank</p>
                                     <p class="card-text mb-0"><i class="fa-solid fa-star" style="font-size: 1.8rem; color: 
                                             #6271D2"></i><span style="font-size: 2rem;"> 607</span></p>
                                     <p class="card-text">
@@ -140,7 +152,7 @@
 
                                 </div>
                                 <div class="col-md-6">
-                                    <p class="card-title earningsCardTitle pb-0">Projects</p>
+                                    <p class="earningsCardTitle pb-0">Projects</p>
                                     <p class="card-text mb-0"><i class="fa-solid fa-code codeIcon"></i><span
                                             style="font-size: 2rem;"> 45</span></p>
                                     <p class="card-text">
@@ -175,13 +187,13 @@
                 </div>
             </div>
 
-            <div class="row px-5">
+            <div class="row px-4">
                 <div class="col-md-6">
-                    <h2 class="secRowTitle">Suggested Projects</h2>
+                    <h2 class="RowTitle">Suggested Projects</h2>
                 </div>
 
                 <div class="col-md-6">
-                    <p class="secRowProjects">
+                    <p class="RowProjects">
                         <a class="text-dark" href="#">view all projects
                             <span><i class="fa-solid fa-arrow-right"></i></a>
                         </span>
@@ -199,16 +211,16 @@
                                 </div>
 
                                 <div class="col-md-6">
-                                    <p class="card-title profileTitle pb-0 mb-0">Alice Martin</p>
+                                    <p class="profileTitle pb-0 mb-0">Alice Martin</p>
                                     <small class="text-muted align-top activityStatus">5 hours ago</small>
                                 </div>
 
                                 <div class="col-md-4">
-                                    <p class="categories ms-5 my-2" style="width:50%">html</p>
+                                    <p class="language ms-5 my-2" style="width:50%">html</p>
                                 </div>
                             </div>
 
-                            <p class="card-text mt-3 profileText">Design and develop a website for an educational
+                            <p class="mt-3 profileText">Design and develop a website for an educational
                                 platform focusing
                                 on the growth of children.</p>
 
@@ -240,16 +252,16 @@
                                 </div>
 
                                 <div class="col-md-6">
-                                    <p class="card-title profileTitle pb-0 mb-0">Alberto Donko</p>
+                                    <p class="profileTitle pb-0 mb-0">Alberto Donko</p>
                                     <small class="text-muted align-top activityStatus">Yesterday, 9:40pm</small>
                                 </div>
 
                                 <div class="col-md-4">
-                                    <p class="categories ms-5 my-2" style="width:50%">ruby</p>
+                                    <p class="language ms-5 my-2" style="width:50%">ruby</p>
                                 </div>
                             </div>
 
-                            <p class="card-text mt-3 profileText">Lorem Ipsum has been the industry's standard dummy
+                            <p class="mt-3 profileText">Lorem Ipsum has been the industry's standard dummy
                                 text ever since the 1500s. This is some more text in a card.</p>
 
                             <div class="mb-4" style="border: 1px solid #E6EBF0;"></div>
@@ -280,16 +292,16 @@
                                 </div>
 
                                 <div class="col-md-6">
-                                    <p class="card-title profileTitle pb-0 mb-0">Alexander Goe</p>
+                                    <p class="profileTitle pb-0 mb-0">Alexander Goe</p>
                                     <small class="text-muted align-top activityStatus">Yesterday, 2:00pm</small>
                                 </div>
 
                                 <div class="col-md-4">
-                                    <p class="categories ms-5 my-2" style="width:50%">ruby</p>
+                                    <p class="language ms-5 my-2" style="width:50%">ruby</p>
                                 </div>
                             </div>
 
-                            <p class="card-text mt-3 profileText">Scrambled it to make a type specimen book. It has
+                            <p class="mt-3 profileText">Scrambled it to make a type specimen book. It has
                                 survived not only five centuries. This is some more text in a card.</p>
 
                             <div class="mb-4" style="border: 1px solid #E6EBF0;"></div>
@@ -329,7 +341,220 @@
                 </div>
 
                 <div class="col-md-2 buttonPadding">
-                    <button class="btn btn-outline-light convoButton" style="background: #6574D6; border: 1px solid #6574D6;">join now</button>
+                    <button class="btn btn-outline-light convoButton"
+                        style="background: #6574D6; border: 1px solid #6574D6;">join now</button>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="row px-4">
+                        <div class="col-md-6">
+                            <h2 class="RowTitle">Activity</h2>
+                        </div>
+
+                        <div class="col-md-6">
+                            <p class="RowProjects">
+                                <a class="text-dark" href="#">view all activity
+                                    <span><i class="fa-solid fa-arrow-right"></i></a>
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="row px-4">
+                        <div class="col-md-6">
+                            <h2 class="RowTitle">Top Earners</h2>
+                        </div>
+
+                        <div class="col-md-6">
+                            <p class="RowProjects">
+                                <a class="text-dark" href="#">view all
+                                    <span><i class="fa-solid fa-arrow-right"></i></a>
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mx-3 my-3">
+                <div class="col-md-8">
+                    <div class="card" style="width: 100%; height:100%">
+
+                        <div class="card-body align-center">
+                            <div class="row mb-3">
+                                <div class="col-md-12">
+                                    <div class="earningsCardTitle mb-4">recent</div>
+                                </div>
+                            </div>
+
+                            <div class="row mb-4">
+                                <div class="col-md-2 pe-0">
+                                    <i class="dollarCircle fa-light fa-dollar-sign"></i><span><img
+                                            src="images/profile3.png"></span>
+                                </div>
+
+                                <div class="col-md-8 ps-0">
+                                    <p class="profileTitle mb-0">Daniel Belu</p>
+                                    <small class="text-muted align-top activityStatus">Recieved $760 for a Ruby
+                                        project.</small>
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            <p class="etherium mb-0" style="width: 85px;">1.2 ETH</p>
+                                        </div>
+
+                                        <div class="col-md-2">
+                                            <p class="profileAmount" style="text-align: left;">$760</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-2">
+                                    <small class="text-muted activityStatus">1 hour ago</small>
+                                </div>
+                            </div>
+
+                            <div class="row mb-4">
+                                <div class="col-md-2 pe-0">
+                                    <i class="dollarCircle fa-light fa-dollar-sign"></i><span><img
+                                            src="images/profile1.png"></span>
+                                </div>
+
+                                <div class="col-md-8 ps-0">
+                                    <p class="profileTitle mb-0">Christophe F. Batista</p>
+                                    <small class="text-muted align-top activityStatus">Received $620 for an html
+                                        project.</small>
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            <p class="bitcoin mb-0" style="width: 85px;">0.2 BTC</p>
+                                        </div>
+
+                                        <div class="col-md-2">
+                                            <p class="profileAmount" style="text-align: left;">$620</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-2">
+                                    <small class="text-muted activityStatus">1 hour ago</small>
+                                </div>
+                            </div>
+
+                            <div class="row mb-4">
+                                <div class="col-md-2 pe-0">
+                                    <i class="dollarCircle fa-light fa-dollar-sign"></i><span><img
+                                            src="images/profile2.png"></span>
+                                </div>
+
+                                <div class="col-md-8 ps-0">
+                                    <p class="profileTitle mb-0">Alice Martin</p>
+                                    <small class="text-muted align-top activityStatus">Submitted a project in
+                                        html.</small>
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            <p class="bitcoin mb-0" style="width: 85px;">0.3 ETH</p>
+                                        </div>
+
+                                        <div class="col-md-2">
+                                            <p class="profileAmount" style="text-align: left;">$760</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-2">
+                                    <small class="text-muted activityStatus">1 hour ago</small>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card" style="width: 100%; height:100%;">
+                        <div class="card-body">
+                            <div class="row mb-4">
+                                <div class="col-md-6">
+                                    <p class="earningsCardTitle">rankings</p>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <small class="text-muted align-top activityStatus">This month</small>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <small class="text-primary align-top activityStatus">All time</small>
+                                </div>
+                            </div>
+
+                            <ol>
+                                <li class="profileTitle" style="font-weight: bold; font-size: 20px">
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            <img src="images/profile4.png">
+                                        </div>
+
+                                        <div class="col-md-10">
+                                            <p class="profileTitle mb-0">Mathew John</p>
+                                            <small class="activityStatus align-top"
+                                                style="font-size: 15px">$10938.34</small>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <div class="my-3" style="border: 1px solid #E6EBF0;"></div>
+
+                                <li class="profileTitle" style="font-weight: bold; font-size: 20px">
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            <img src="images/profile3.png">
+                                        </div>
+
+                                        <div class="col-md-10">
+                                            <p class="profileTitle mb-0">Daniel Belu</p>
+                                            <small class="activityStatus align-top"
+                                                style="font-size: 15px">$9087.10</small>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <div class="my-3" style="border: 1px solid #E6EBF0;"></div>
+
+                                <li class="profileTitle" style="font-weight: bold; font-size: 20px">
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            <img src="images/profile2.png">
+                                        </div>
+
+                                        <div class="col-md-10">
+                                            <p class="profileTitle mb-0">Elizabeth Kin</p>
+                                            <small class="activityStatus align-top"
+                                                style="font-size: 15px">$6789.90</small>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <div class="my-3" style="border: 1px solid #E6EBF0;"></div>
+
+                                <li class="profileTitle" style="font-weight: bold; font-size: 20px">
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            <img src="images/profile1.png">
+                                        </div>
+
+                                        <div class="col-md-10">
+                                            <p class="profileTitle mb-0">Arosuh Uyt</p>
+                                            <small class="activityStatus align-top"
+                                                style="font-size: 15px">$6009.00</small>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -341,8 +566,6 @@
 
 
     </div>
-    </div>
-    </div>
 
     <!-- Body Ends Here -->
 
@@ -353,9 +576,7 @@
     <script src="script.js"></script>
 
     <!-- MDBootstrap -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.20.0/js/mdb.min.js"
-        integrity="sha512-XFd1m0eHgU1F05yOmuzEklFHtiacLVbtdBufAyZwFR0zfcq7vc6iJuxerGPyVFOXlPGgM8Uhem9gwzMI8SJ5uw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.1.0/mdb.min.js"></script>
 
 
 
